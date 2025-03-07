@@ -38,7 +38,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
 -------TOGGLE 
 
      Toggle = AddToggle(Tab1o, {
-      Name = "tôi là bảo chúc bạn dùng script vui vẻ",
+      Name = "Have fun playing the game!",
       Default = false,
       Callback = function()
      end
@@ -97,6 +97,11 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
     Callback = function()
 	  loadstring(game:HttpGet("https://raw.githubusercontent.com/GiaBao-hub/Morihub/refs/heads/main/Hop%20rejoin"))()
   end
+  })   AddButton(Tab1o, {
+     Name = "tsua hub (banana cắt nhưng lỏ hơn ở farm lv)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Tsuo7/TsuoHub/main/Tsuoscripts"))()
+  end
   })
 ----- Dropdown 
 
@@ -110,8 +115,8 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
 
 ----- Section 
    
-   Section = AddSection(Tab1o, {"Have fun playing the game!"})          
+   Section = AddSection(Tab1o, {"chưa bị dụ mà đã nhìn rồi"})          
 
 ----- Paragraph 
                     
-   Paragraph = AddParagraph(Farm, {"bạn", "nhìn j vậy chưa bị lừa à T_T"})
+   Paragraph = AddParagraph(Farm, {"a", "a"})
