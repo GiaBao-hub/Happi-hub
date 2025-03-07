@@ -46,8 +46,8 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
     
 ------- BUTTON
     
-    AddButton(Tab3o, {
-     Name = "fix lag v1",
+   AddButton(Tab3o, {
+     Name = "Fix lag v1",
     Callback = function()
 	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
   end
@@ -55,10 +55,10 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
      AddButton(Tab2o, {
      Name = "arc hub",
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ChopLoris/ArcHub/main/main.lua"))()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/ChopLoris/ArcHub/main/main.lua"))()
   end
   })   AddButton(Tab3o, {
-     Name = "Fix lag v2",
+     Name = "fix lag v2",
     Callback = function()
 	  loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/AKGAMING-FIXLAG"))()
   end
@@ -75,27 +75,29 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
   })   AddButton(Tab1o, {
      Name = "w-azure",
     Callback = function()
-    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+	  loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
   end
   })   AddButton(Tab1o, {
      Name = "mukuro hub",
     Callback = function()
-    loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+	  loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
   end
   })   AddButton(Tab1o, {
      Name = "redz hub",
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
   end
   })   AddButton(Tab3o, {
      Name = "hop sever low",
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/GiaBao-hub/Hop-sever-low-played/refs/heads/main/Hop%20sever%20low%20Players?token=GHSAT0AAAAAADABGI7SWNH556DNHVNNPMK2Z6KRNQQ"))()
+	  loadstring(game:HttpGet("https://gist.githubusercontent.com/Nightpr/ba14b5f43a07735e7b0e8a77e430da1b/raw/85d2e640e9a6a6f6bfcbeaf850f3544267194261/Best%2520Roblox%2520Server%2520hop%2520(%2520Small%2520server%2520)"))()
+  end
+  })
 ----- Dropdown 
 
   Dropdown = AddDropdown(Tab1o, {
-     Name = "đố bạn bấm vô",
-     Options = {"bạn ", "bị ", "dụ ", "rồi","hehe"},
+     Name = "bấm vô",
+     Options = {"bạn", "bị dụ ", "rồi", "hehe"},
      Default = "Melee",
      Callback = function()
      end
@@ -103,8 +105,8 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
 
 ----- Section 
    
-   Section = AddSection(Tab1o, {"bạn nhìn j nữa vậy chưa bị dụ à  T_T"})          
+   Section = AddSection(Tab1o, {"Have fun playing the game!"})          
 
 ----- Paragraph 
                     
-   Paragraph = AddParagraph(Farm, {"nhìn gì", ""})
+   Paragraph = AddParagraph(Farm, {"bạn", "nhìn j vậy chưa bị lừa à T_T"})
