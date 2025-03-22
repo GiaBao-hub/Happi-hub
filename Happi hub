@@ -3,7 +3,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
        local Window = MakeWindow({
          Hub = {
          Title = "happi hub",
-         Animation = "welcome to Happi hub"
+         Animation = "chào mừng đến happi hub"
          },
         Key = {
         KeySystem = false,
@@ -30,22 +30,12 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
       })
       
 ------ Tab
-     local Tab1o = MakeTab({Name = "Better experience"})
+     local Tab1o = MakeTab({Name = "Better experience "})
      local Tab2o = MakeTab({Name = "Blox fruit"})
      local Tab3o = MakeTab({Name = "king legacy"})
-     local Tab4o = MakeTab({Name = "crossover arise"})
-     local Tab5o = MakeTab({Name = "verse piece"})
+     local Tab4o = MakeTab({Name = "verse piece"})
      
      
--------TOGGLE 
-
-     Toggle = AddToggle(Tab1o, {
-      Name = "Have fun playing the game!",
-      Default = false,
-      Callback = function()
-     end
-    })
-    
 ------- BUTTON
     
    AddButton(Tab1o, {
@@ -104,20 +94,10 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
     Callback = function()
 	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Tsuo7/TsuoHub/main/Tsuoscripts"))()
   end
-  })   AddButton(Tab4o, {
-     Name = "river hub",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/GiaBao-hub/Morihub/refs/heads/main/Gi%C3%A1%20bao%20hub%20(%20crossover%20arise)"))()
-  end
-})   AddButton(Tab4o, {
-     Name = "key",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/IAmJamal10/Scripts/refs/heads/main/AriseCrossover"))()
-  end
   })   AddButton(Tab1o, {
      Name = "fly",
     Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+	  (game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
   end
   })   AddButton(Tab5o, {
      Name = "sanguine hub",
@@ -129,21 +109,14 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
     Callback = function()
 	  loadstring(game:HttpGet("https://raw.githubusercontent.com/GiaBao-hub/Morihub/refs/heads/main/Anti%20afk"))()
   end
+  })   AddButton(Tab4o, {
+     Name = "elgato hub",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/meobeo8/elgato/a/Loader"))()
+  end
+  })   AddButton(Tab4o, {
+     Name = "sanguine hub",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/imsanguine/sanguine/main/loader.lua"))()
+  end
   })
------ Dropdown 
-
-  Dropdown = AddDropdown(Tab1o, {
-     Name = "bấm vô",
-     Options = {"bạn", "bị dụ ", "rồi", "hehe"},
-     Default = "Melee",
-     Callback = function()
-     end
-   })
-
------ Section 
-   
-   Section = AddSection(Tab1o, {"chưa bị dụ mà đã nhìn rồi"})          
-
------ Paragraph 
-                    
-   Paragraph = AddParagraph(Farm, {"a", "a"})
