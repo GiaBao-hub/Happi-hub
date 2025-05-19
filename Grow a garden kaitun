@@ -2,9 +2,9 @@ getgenv().VxezeHubConfig = {
 
     ["Auto Collect Plants"] = true,
 
-    ["Auto Collect Moonlit Fruit"] = false,
+    ["Auto Collect Moonlit Fruit"] = true,
 
-    ["Auto Collect Blood Fruit"] = false,
+    ["Auto Collect Blood Fruit"] = true,
 
     ["Loop Auto Sell"] = true,
 
@@ -38,7 +38,7 @@ getgenv().VxezeHubConfig = {
 
     ["SelectedBloodItemsToBuy"] = {
 
-        ["Blood Banana"] = true, ["Blood Hedgehog"] = false, ["Blood Kiwi"] = true, ["Blood Owl"] = true,
+        ["Blood Banana"] = false, ["Blood Hedgehog"] = false, ["Blood Kiwi"] = true, ["Blood Owl"] = true,
 
         ["Moon Melon"] = false, ["Mysterious Crate"] = true, ["Night Egg"] = true,
 
