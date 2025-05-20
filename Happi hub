@@ -1,122 +1,95 @@
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
+local ScreenGui = Instance.new("ScreenGui")
+local ImageButton = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
 
-       local Window = MakeWindow({
-         Hub = {
-         Title = "happi hub",
-         Animation = "chào mừng đến happi hub"
-         },
-        Key = {
-        KeySystem = false,
-        Title = "Key System",
-        Description = "",
-        KeyLink = "",
-        Keys = {"1234"},
-        Notifi = {
-        Notifications = true,
-        CorrectKey = "Running the Script...",
-       Incorrectkey = "The key is incorrect",
-       CopyKeyLink = "Copied to Clipboard"
-      }
-    }
-  })
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-       MinimizeButton({
-       Image = "http://www.roblox.com/asset/?id=122789004227770",
-       Size = {60, 60},
-       Color = Color3.fromRGB(10, 10, 10),
-       Corner = true,
-       Stroke = false,
-       StrokeColor = Color3.fromRGB(255, 0, 0)
-      })
-      
------- Tab
-     local Tab1o = MakeTab({Name = "Better experience "})
-     local Tab2o = MakeTab({Name = "Blox fruit"})
-     local Tab3o = MakeTab({Name = "king legacy"})
-     local Tab4o = MakeTab({Name = "verse piece"})
-     
-     
-------- BUTTON
+ImageButton.Parent = ScreenGui
+ImageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.10615778, 0, 0.16217947, 0)
+ImageButton.Size = UDim2.new(0, 40, 0, 40)
+ImageButton.Draggable = true
+ImageButton.Image = "http://www.roblox.com/asset/?id=121436447257379"
+
+UICorner.CornerRadius = UDim.new(1, 10) 
+UICorner.Parent = ImageButton
+
+ImageButton.MouseButton1Down:Connect(function()
+    game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.End, false, game)
+end)
+
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+repeat wait() until game:IsLoaded()
+local Window = Fluent:CreateWindow({
+    Title = "Happi hub",
+    SubTitle = "Blox Fruit",
+    TabWidth = 157,
+    Size = UDim2.fromOffset(500, 320),
+    Acrylic = true,
+    Theme = "Azure3",
+    MinimizeKey = Enum.KeyCode.End
+})
+local Tabs = {
+        Main0=Window:AddTab({ Title="Thông Tin" }),
+        Main1=Window:AddTab({ Title="trợ giúp cho game" }),
+        Main2=Window:AddTab({ Title="grow a garden" }),
+        Main3=Window:AddTab({ Title="Coming soon" }),
+}
+    Tabs.Main0:AddButton({
+    Title = "Facebook",
+    Description = "Facebook của tui nhé",
+    Callback = function()
+        setclipboard("https://m.facebook.com/nguyen.bao.748859/")
+    end
+})
     
-   AddButton(Tab1o, {
-     Name = "Fix lag v1",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+    Tabs.Main1:AddButton({
+    Title="fix lag",
+    Description="",
+    Callback=function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/AKGAMING-FIXLAG"))
   end
+})
+
+Tabs.Main1:AddButton({
+    Title="no clips",
+    Description="",
+    Callback=function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/GiaBao-hub/Happi-hub/refs/heads/main/Noclip%20script"))()
+  end
+})
+
+Tabs.Main1:AddButton({
+    Title="fly",
+    Description="",
+    Callback=function()
+	  loadstring(game:HttpGet("https://https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+    end
   })
-     AddButton(Tab3o, {
-     Name = "arc hub",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/ChopLoris/ArcHub/main/main.lua"))()
+
+Tabs.Main1:AddButton({
+    Title="rejoin sever",
+    Description="",
+    Callback=function()
+	  loadstring(game:HttpGet("https://pastefy.app/nY3X0d9a/raw"))()
   end
-  })   AddButton(Tab1o, {
-     Name = "fix lag v2",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/AKGAMING-FIXLAG"))()
+})
+
+Tabs.Main2:AddButton({
+    Title="no-lag hub",
+    Description="",
+    Callback=function()
+	  loadstring(game:HttpGet("https://rawscripts.net/raw/Grow-a-Garden-NoLag-Hub-no-key-38699"))()
   end
-  })   AddButton(Tab2o, {
-     Name = "speed hub",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
-  end
-  })   AddButton(Tab2o, {
-     Name = "xero hub",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
-  end
-  })   AddButton(Tab2o, {
-     Name = "w-azure",
-    Callback = function()
-	  loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
-  end
-  })   AddButton(Tab2o, {
-     Name = "mukuro hub",
-    Callback = function()
-	  loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
-  end
-  })   AddButton(Tab2o, {
-     Name = "redz hub",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
-  end
-  })   AddButton(Tab1o, {
-     Name = "hop sever low",
-    Callback = function()
-	  loadstring(game:HttpGet("https://gist.githubusercontent.com/Nightpr/ba14b5f43a07735e7b0e8a77e430da1b/raw/85d2e640e9a6a6f6bfcbeaf850f3544267194261/Best%2520Roblox%2520Server%2520hop%2520(%2520Small%2520server%2520)"))()
-  end
-  })   AddButton(Tab1o, {
-     Name = "rejoin sever",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/GiaBao-hub/Morihub/refs/heads/main/Hop%20rejoin"))()
-  end
-  })   AddButton(Tab2o, {
-     Name = "tsua hub (banana cat nhưng lỏ hơn ở farm lv)",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Tsuo7/TsuoHub/main/Tsuoscripts"))()
-  end
-  })   AddButton(Tab1o, {
-     Name = "fly",
-    Callback = function()
-	  (game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
-  end
-  })   AddButton(Tab5o, {
-     Name = "sanguine hub",
-    Callback = function()
-	  Loadstring(game:HttpGet('https://raw.githubusercontent.com/imsanguine/sanguine/main/loader.lua'))() 
-  end
-  })   AddButton(Tab1o, {
-     Name = "anti afk",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/GiaBao-hub/Morihub/refs/heads/main/Anti%20afk"))()
-  end
-  })   AddButton(Tab4o, {
-     Name = "elgato hub",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/meobeo8/elgato/a/Loader"))()
-  end
-  })   AddButton(Tab4o, {
-     Name = "sanguine hub",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/imsanguine/sanguine/main/loader.lua"))()
-  end
+})
+  
+Tabs.Main2:AddButton({
+    Title="speed hub",
+    Description="",
+    Callback=function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua"))()
+   end
   })
